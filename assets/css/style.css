@@ -86,11 +86,20 @@ a:hover {
   overflow: hidden;
 }
 
-.bg-image {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
+
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card{
+  border: hidden;
+}
+
+.more-info{
+  padding-bottom: 5%;
 }
 
 @media (max-width: 1024px) {
@@ -106,7 +115,7 @@ a:hover {
 .overlay-mf {
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
   padding: 0;
   height: 100%;
   width: 100%;
@@ -198,6 +207,13 @@ a:hover {
 }
 
 .box-shadow-full {
+  padding: 3rem 1.25rem;
+  position: relative;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.box-shadow-full1 {
   padding: 3rem 1.25rem;
   position: relative;
   background-color: #fff;
@@ -365,11 +381,11 @@ a:hover {
 }
 
 #header .logo {
-  font-size: 28px;
+  font-size: 48px;
   margin: 0;
   padding: 0;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: -7px;
 }
 
 #header .logo a {
@@ -383,6 +399,53 @@ a:hover {
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
   padding: 12px 0;
+}
+
+.subtitle{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.subtitle-bottom{
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.subtitle-gradient{
+    background: linear-gradient(to right, white, #1EB749 35%);
+    transition: background-position 1s ease;
+    background-size: 200% auto;
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle-gradient:hover {
+  background-position: -30%;
+}
+
+.experience{
+  color: whitesmoke;
+}
+
+.experience-bottom{
+  color: #BBBBBB;
+}
+
+.col-lg-4{
+  padding-bottom: 5%;
+}
+
+svg{
+  align-content: center;
+    margin: 0 auto;
+    display: block;
+
 }
 
 /*--------------------------------------------------------------

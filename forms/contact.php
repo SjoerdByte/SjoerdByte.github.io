@@ -22,6 +22,10 @@ $headers  = 'MIME-Version: 1.0' . "\r\n"
 
 if(mail('sjoerd.pelzer@gmail.com', 'Contact formulier - Sjoerd.pelzer@gmail.com', $body, $headers)) {
   echo json_encode(['success' => true]);
+
+    header('Location: ../index.html');
 } else {
   echo json_encode(['success' => false]);
+
+    header('Location: ../index.html');
 }
