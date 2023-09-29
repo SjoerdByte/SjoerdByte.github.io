@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>SDev | Home</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>SjoerdByte | Home</title>
+    <meta name="description" content="Sjoerd Pelzer - Web Developer Portfolio">
+    <meta name="keywords" content="Sjoerd Pelzer, Web Developer, Portfolio, Laravel Developer, Bootstrap Developer">
+    <meta name="author" content="Sjoerd Pelzer">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -21,7 +22,6 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
         <h1 class="logo"><a href=""> < / > </a></h1>
-
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a class="nav-link scrollto active" href="#">Home</a></li>
@@ -38,9 +38,15 @@
     <div class="hero-content display-table">
         <div class="table-cell">
             <div class="container">
-                <h1 class="Hero-name" style="float: left; color: #BBBBBB">SjoerdByte.</h1>
-                <h3 class="subtitle" style="color: whitesmoke">Hi i'm Sjoerd, I am a <span class="subtitle-gradient">web developer</span><span class="typed" data-typed-items="Programmer, Developer, Student, Gamer"></span></h3>
-                <h6 class="subtitle-bottom" style="padding-left: 30%; color: #BBBBBB">I am a (mostly) self-taught web developer with experience with languages like: HTML, PHP, JS and frameworks like: Boostrap, Laravel and TailwindCSS</h6>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h1 class="Hero-name" style="float: left; color: #BBBBBB">SjoerdByte.</h1>
+                    </div>
+                    <div class="col-lg-9">
+                        <h3 class="subtitle" style="color: whitesmoke">Hi i'm Sjoerd, I am a <span class="subtitle-gradient">web developer</span><span class="typed" data-typed-items="Programmer, Developer, Student, Gamer"></span></h3>
+                        <h6 class="subtitle-bottom" style=" color: #BBBBBB">I am a (mostly) self-taught web developer with experience with languages like: HTML, PHP, JS and frameworks like: Boostrap, Laravel and TailwindCSS</h6>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -48,8 +54,8 @@
 
 <main id="main">
 <!--    about-->
-    <section class="hero experience-mf bg-image sect-pt4 route" style="background-image: url(assets/img/450.png); padding-bottom: 200px">
-        <div class="container" id="experience" style="scroll-margin-top: 75px;">
+    <section class="hero experience-mf bg-image sect-pt4 route" id="experience"style="background-image: url(assets/img/450.png); padding-bottom: 200px">
+        <div class="container" style="scroll-margin-top: 75px;">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
@@ -96,6 +102,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-lg-4">
                             <div class="card bg-transparent">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-php" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -149,26 +158,25 @@
     <section id="work" class="portfolio-mf sect-pt4 route" style="scroll-margin-top: 75px;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="title-box text-center">
-                        <h3 class="title-a">
-                            Portfolio
-                        </h3>
-                        <p class="subtitle-a">
-                            Mijn website portfolio van het afgelopen jaar.
-                        </p>
-                        <div class="line-mf"></div>
-                    </div>
+                <div class="col-lg-12 title-box text-center">
+                    <h3 class="title-a">
+                        Portfolio
+                    </h3>
+                    <p class="subtitle-a">
+                        Mijn website portfolio van het afgelopen jaar.
+                    </p>
+                    <div class="line-mf"></div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="work-box">
                         <a href="assets/img/ThinkingDutch.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                             <div class="work-img">
                                 <img src="assets/img/ThinkingDutch.jpg" alt="website home page" class="img-fluid">
                             </div>
                         </a>
+                        <br>
                         <div class="work-content">
                             <div class="row">
                                 <div class="col-sm-10">
@@ -182,9 +190,10 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="work-box">
                         <a href="assets/img/B3Pra.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                             <div class="work-img">
@@ -206,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="work-box">
                         <a href="assets/img/Catalogus.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
                             <div class="work-img">
@@ -241,47 +250,6 @@
                     <div class="contact-mf">
                         <div class="box-shadow-full1">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div class="title-box-2">
-                                        <h5 class="title-left">
-                                            Verstuur een mail naar mij.
-                                        </h5>
-                                    </div>
-                                    <div>
-                                        <form action="forms/contact.php" method="POST" role="form" class="php-email-form">
-                                            <div class="row">
-                                                <div class="col-md-12 mb-3">
-                                                    <div class="form-group">
-                                                        <input type="text" name="name" class="form-control" id="name" placeholder="Uw naam" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 mb-3">
-                                                    <div class="form-group">
-                                                        <input type="email" class="form-control" name="email" id="email" placeholder="Uw mail" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 mb-3">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Onderwerp" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <textarea class="form-control" name="message" rows="5" placeholder="Bericht" required></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12 text-center my-3">
-                                                    <div class="loading">Loading</div>
-                                                    <div class="error-message"></div>
-                                                    <div class="sent-message">Uw bericht is verzonden, Bedankt!</div>
-                                                </div>
-                                                <div class="col-md-12 text-center">
-                                                    <button type="submit" class="button button-a button-big button-rouded">Verstuur bericht</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
                                 <div class="col-lg-6">
                                     <div class="title-box-2 pt-4 pt-md-0">
                                         <h5 class="title-left">
@@ -290,9 +258,16 @@
                                     </div>
                                     <div class="more-info">
                                         <p class="lead">
-                                            Heeft u vragen over mij of wilt u meer informatie over mijn diensten? Neem dan contact met mij op.
+                                            Heeft u vragen over mij of wilt u meer informatie over mijn diensten? Neem dan contact met mij op via Mail of LinkedIn.
                                         </p>
                                         <small>Reactie is meestal binnen 2 werkdagen.</small>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="title-box-2 pt-4 pt-md-0">
+                                        <h5 class="title-left">
+                                            Mijn socials.
+                                        </h5>
                                     </div>
                                     <div class="socials">
                                         <p>
@@ -307,6 +282,8 @@
                                             <img class="contact-icon" src="assets/img/github.svg" alt="Phone Icon">
                                             <a href="https://github.com/SjoerdByte">SjoerdByte</a>
                                         </p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
